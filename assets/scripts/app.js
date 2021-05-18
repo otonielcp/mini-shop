@@ -85,6 +85,8 @@ class ShoppingCart extends Component {
       <h2>Total: \$${0}</h2>
       <button>Order Now!</button>
     `;
+		const orderButton = cartEl.querySelector('button');
+		orderButton.addEventListener('click', this.orderProducts);
 		this.totalOutput = cartEl.querySelector('h2');
 	}
 }
